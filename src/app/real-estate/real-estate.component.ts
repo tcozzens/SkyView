@@ -11,6 +11,7 @@ import { AppComponent } from '../app.component';
 
 export class RealEstateComponent {
   title = 'RealeEstate works!';
+  public image =  "/assets/img/real-estate/aerial-photo.jpg" ;
 
   constructor () {}
 }

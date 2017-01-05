@@ -1,0 +1,22 @@
+h1 {
+    font-style: italic;
+    color: #93c1e4;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
