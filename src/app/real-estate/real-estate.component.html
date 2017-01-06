@@ -4,8 +4,21 @@
 
 <div>
     <ul>
+        <div class="leftNav" (click)="previousImage()">
+            <div class="leftArrowWrap">
+                <span class="leftArrow"></span>
+            </div>
+        </div>
         <li>
-            <img src="{{image}}" alt="">
+            <img id=image src="{{currentImagePath}}" class={{isSrcImage}} alt="">
+            <div class={{isSrcVideo}}>
+                <iframe width={{imageWidth}} height={{imageHeight}} [src]="passSecurityForEmbeded" frameborder="0" allowfullscreen></iframe>
+            </div>
         </li>
+        <div class="rightNav" (click)="nextImage()">
+            <div class="rightArrowWrap">
+                <span class="rightArrow"></span>
+            </div>
+        </div>
     </ul>
 </div>

@@ -10,13 +10,72 @@ ul {
     list-style: none;
     padding: 0;
     margin-top: 15px;
+    text-align: center;
 }
 
 li {
     width: 80%;
     margin: auto;
+    display: inline-block;
 }
 
 img {
     width: 100%;
+}
+
+.leftNav {
+    width: 3%;
+    display: inline-block
+}
+
+.rightNav {
+    width: 3%;
+    display: inline-block
+}
+
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+
+.leftArrow {
+    float: left;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 3em 0;
+    border-color: transparent #ffffff transparent transparent;
+    -webkit-transform: rotate(360deg);
+    /* added for better anti-aliasing on webkit browsers */
+}
+
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+
+.rightArrow {
+    float: right;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 0 3em 3em;
+    border-color: transparent transparent transparent #ffffff;
+    -webkit-transform: rotate(360deg);
+    /* added for better anti-aliasing on webkit browsers */
+}
+
+.srcIsImage {
+    display: inline-block;
+}
+
+.srcIsNotImage {
+    display: none;
+}
+
+.srcIsVideo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.srcIsNotVideo {
+    display: none;
 }
