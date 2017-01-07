@@ -79,3 +79,36 @@ img {
 .srcIsNotVideo {
     display: none;
 }
+
+.videoTitle {
+    z-index: 2;
+    font-style: italic;
+    color: #ffffff;
+    position: absolute;
+    left: 20%;
+    padding-top: 30%;
+    font-size: 50px;
+}
+
+.videoSubTitle {
+    z-index: 2;
+    font-style: italic;
+    color: #93c1e4;
+    position: absolute;
+    left: 32%;
+    padding-top: 31.5%;
+    font-size: 45px;
+}
+
+.videoDescription {
+    width: 45%;
+    z-index: 2;
+    font-style: bold;
+    font-style: italic;
+    color: #ffffff;
+    position: absolute;
+    left: 25%;
+    padding-top: 36%;
+    font-size: 20px;
+    text-align: left;
+}

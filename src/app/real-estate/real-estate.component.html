@@ -12,7 +12,11 @@
         <li>
             <img id=image src="{{currentImagePath}}" class={{isSrcImage}} alt="">
             <div class={{isSrcVideo}}>
-                <iframe width={{imageWidth}} height={{imageHeight}} [src]="passSecurityForEmbeded" frameborder="0" allowfullscreen></iframe>
+                <div class="videoTitle">AERIAL</div>
+                <div class="videoSubTitle">VIDEO</div>
+                <div class="videoDescription">OUR CAMERA ON OUR DRONE CAPTURES FULL 4K VIDEO. THIS FOOTAGE IS BUTTERY SMOOTH THANKS TO ITS 3-AXIS GIMBLE. THE FOOTAGE IS ALSO FULLY EDITED TO NON-COPYRIGHTED MUSIC AND DELIVERED WITHIN A FEW DAYS OF FLIGHT. AERIAL VIDEO SETS THE HOUSE
+                    APART LIKE NO OTHER PROPERTY.</div>
+                <iframe width={{imageWidth}} height={{imageHeight}} [src]="passSecurityForEmbeded" frameborder="0" allowfullscreen style="z-index:1;"></iframe>
             </div>
         </li>
         <div class="rightNav" (click)="nextImage()">
